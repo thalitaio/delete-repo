@@ -6,7 +6,8 @@ load_dotenv()
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 USERNAME = "thalitaio"
 
-repositories_to_delete = ["desafio02"]
+#abaixo, coloque o nome dos repositórios que deseja apagar dentro da lista, entre aspas e separados por vírgula
+repositories_to_delete = ["", ]
 
 for repo in repositories_to_delete:
     url = f"https://api.github.com/repos/{USERNAME}/{repo}"
